@@ -1,0 +1,310 @@
+body {
+	/*overflow: hidden;*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin:0;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	/*line-height: 70px;
+*/
+}
+
+canvas {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+.content {
+	position:absolute;
+	z-index:2;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+span {
+	font-size:19px;
+}
+
+span a {
+	text-decoration: none;
+}
+
+/* underline "Slide In, Slide Off", different for .main (two colors) 
+and .aside (white to transparent) */
+.underline, .underline_right {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+
+.underline:before, .underline_right:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 0;
+	transition: width 0s ease, background .5s ease;
+}
+
+.underline:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 4px;
+	width: 0;
+	background: linear-gradient(to right, rgba(168,237,234,1) 0%, rgba(168,237,234,1) 6%, rgba(254,214,227,1) 47%, rgba(254,214,227,1) 100%);
+	transition: width .5s ease;
+}
+
+.underline:hover:before {
+	width: 100%;
+	background: linear-gradient(to right, rgba(168,237,234,1) 0%, rgba(168,237,234,1) 6%, rgba(254,214,227,1) 47%, rgba(254,214,227,1) 100%);
+	transition: width .5s ease;
+}
+
+.underline:hover:after, .underline_right:hover:after  {
+	width: 100%;
+	background: transparent;
+	transition: all 0s ease;
+}
+
+
+/* white underline for .aside */
+.underline_right:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 4px;
+	width: 0;
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 6%, rgba(255,255,255,0.5) 47%, rgba(254,214,227,0) 100%);
+	transition: width .5s ease;
+}
+
+.underline_right:hover:before {
+	width: 100%;
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 6%, rgba(255,255,255,0.5) 47%, rgba(254,214,227,0) 100%);
+	transition: width .5s ease;
+}
+
+
+
+
+
+
+/* INDEX */
+
+.main {
+	font-size:45px;
+	font-family: 'Playfair Display', serif;
+	flex:2;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.2em;
+}
+
+.main a {
+	color:#000;
+	text-decoration: none;
+}
+
+.aside {
+	height:100%;
+	flex:1;
+	font-size:45px;
+	font-family: 'Playfair Display', serif;
+	font-weight:900;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+}
+
+.aside a {
+	color:#fff;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT */
+
+.content_about {
+	position:absolute;
+	z-index:2;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: space-between;
+
+}
+
+.main_about {
+	font-size:25px;
+	font-family: 'Playfair Display', serif;
+	flex:2;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	padding:70px;
+}
+
+h2 {
+	font-family:'Decalotypebold', sans-serif;
+}
+
+.main_about a {
+	color:#000;
+}
+
+.aside_about {
+	height:100%;
+	flex:1;
+	font-size:25px;
+	font-family: 'Playfair Display', serif;
+	font-weight:900;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+	flex-direction: column;
+}
+
+.aside_about a {
+	color:#fff;
+}
+
+.contact_resp {
+	display:none;
+}
+
+
+
+@media screen and (max-width: 769px) {
+	.content {
+		flex-direction:column;
+		color:#000;
+	}
+
+	.main {
+		margin-left:40px;
+	}
+
+	.main a {
+		text-decoration: underline;
+	}
+
+	.aside {
+		color:#000;
+	}
+
+	.aside a {
+		text-decoration: underline;
+		color:#000;
+	}
+
+	.aside p {
+		color:#000;
+	}
+
+
+	.main_about {
+	
+		
+	}
+
+	.aside_about {
+		display:none;
+	}
+	
+	
+
+	.canvas {
+		display:none;
+	}
+	.contact_resp {
+		display:block;
+	}
+	.content_about {
+	top:0;
+
+	}
+
+	
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+	.main {
+		font-size:20px;
+		margin-left:20px;
+	}
+
+	.main a {
+		text-decoration: underline;
+	}
+
+	.aside {
+		font-size:20px;
+	}
+
+	.aside a {
+		text-decoration: underline;
+	}
+
+	.content_about {
+	top:0;
+
+	}
+
+	span {
+		padding-bottom:40px;
+	}
+
+	.contact_resp {
+		display:block;
+	}
+
+	.main_about {
+		font-size:18px;
+		justify-content: flex-start;
+		width:60%;
+		padding: 40px;
+		height:100%;
+	}
+
+	.aside_about {
+		display:none;
+	}
+	
+	h2 {
+		font-size:20px;
+	}
+
+	.canvas {
+		display:none;
+	}
+
+
+}
+

@@ -1,0 +1,648 @@
+@font-face {
+    font-family: 'kg_second_chances_solidRg';
+    src: url('/wp-content/themes/template_formulaire/type/kgsecondchancessolid-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/template_formulaire/type/kgsecondchancessolid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: transparent url(/wp-content/themes/template_formulaire/img/bg_paper.jpg) repeat !important;
+	display:block;
+}
+
+
+.display_on_larger_screen {
+display:none;
+}
+
+h1 {
+	color:#fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'kg_second_chances_solidRg', "Signika", sans-serif;
+}
+h2 {
+	color:#004994;
+	font-family: 'Signika', sans-serif;
+}
+
+h3 {
+	font-family: 'Signika', sans-serif;
+	font-size:30px;
+	color:#fff;
+}
+
+h5 {
+	font-family: 'Signika', sans-serif;
+	font-size:20px;
+	color:#fff;
+	margin-bottom:0;
+}
+
+h6 {
+	font-family: 'Signika', sans-serif;
+	font-size:20px;
+	text-align:center;
+	margin-top:30px;
+	margin-bottom: 0;
+}
+
+h6.orange {
+	color:#f2ab42;
+}
+
+h6.vert {
+	color:#a9b21d;
+}
+
+h6.bleu {
+	color:#3fb6ab;
+}
+
+
+h3 span {
+	margin-left:20px;
+	margin-top:3px;
+}
+
+h4 {
+	font-family: 'Signika', sans-serif;
+	margin-bottom:0;
+	color:#E1043E;
+	
+}
+
+.menu {
+	margin-top:100px;
+	padding:15px;
+	text-decoration:none;
+	border:1px solid #004994;
+	background-color:#fff;
+	border-radius:30px;
+	font-family: 'Signika', sans-serif;
+	height:40px;
+	width:200px;
+	color:#004994;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	transition: 0.3s;
+	font-size:14px;
+}
+
+.menu:hover {
+	background-color:#004994;
+	transition: 0.3s;
+	color:#fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding:0;
+}
+
+li {
+	font-size:14px;
+}
+
+.content {
+	padding:0px 100px 100px 100px;
+}
+
+input[type="file"] {
+	margin-left:10px;
+}
+input[type="number"] {
+	width:100px;
+	margin-right:5px !important;
+}
+
+input[type="file"] {
+	background-color:#fff;
+	border-radius:5px;
+	margin:7px 20px 0px 15px;
+	border:1px solid #DCDCDC;
+}
+
+input[type="file"]:hover {
+	border-color:#004994;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
+	background-color:#fff;
+	border-radius:5px;
+	height:30px;
+	margin:7px 20px 0px 0px;
+	border:1px solid #DCDCDC;
+	padding-left:10px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+	border-color:#004994;
+	outline:none;
+}
+
+input[type="text"]:hover, input[type="tel"]:hover, input[type="email"]:hover, input[type="number"]:hover {
+	border-color:#004994;
+}
+
+.wpcf7-form-control {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio_item input[type="radio"] + span {
+	font-family: 'Signika', sans-serif;
+	font-size:22px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.wpcf7-list-item:hover, .wpcf7-list-item:focus{
+	border-color:#004994;
+	outline:none;
+}
+
+.plan {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right:10px;
+	max-width:500px;
+	flex:1;
+	background-color:#fff;
+	border-radius:8px;
+	box-shadow:0 0 16px 0 rgba(206, 208, 212, 1);
+}
+
+
+
+.pack_header_vert {
+	background-color:#a9b21d; /* ancienne couleur : #B8E986 */
+	border-radius: 8px 8px 0px 0px;
+	width:100%;
+	text-align:center;
+}
+
+.pack_header_orange {
+	background-color:#f2ab42; /* ancienne couleur : #FFB176 */
+	border-radius: 8px 8px 0px 0px;
+	width:100%;
+	text-align:center;
+}
+.pack_header_bleu {
+	background-color:#3fb6ab; /* ancienne couleur : #4A90E2 */
+	border-radius: 8px 8px 0px 0px;
+	width:100%;
+	text-align:center;
+}
+
+.pack_footer_vert {
+	background-color:#a9b21d; /* ancienne couleur : #B8E986 */
+	border-radius: 0px 0px 8px 8px;
+	width:100%;
+	text-align:center;
+}
+
+.pack_footer_orange {
+	background-color:#f2ab42; /* ancienne couleur : #B8E986 */
+	border-radius: 0px 0px 8px 8px;
+	width:100%;
+	text-align:center;
+}
+
+.pack_footer_bleu {
+	background-color:#3fb6ab; /* ancienne couleur : #B8E986 */
+	border-radius: 0px 0px 8px 8px;
+	width:100%;
+	text-align:center;
+}
+
+.pack_content {
+	height:100%;
+	background-color:#fff;
+	border-radius: 0px 0px 8px 8px;
+	width:85%;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.plan p {
+	color:#fff;
+	text-align:center;
+	margin-top:5px;
+}
+
+#checkbox-newsletter {
+	display:block;
+}
+
+input[type="submit"] {
+	margin-top:100px;
+	border:1px solid #004994;
+	background-color:#fff;
+	border-radius:30px;
+	font-family: 'Signika', sans-serif;
+	height:40px;
+	width:200px;
+	color:#004994;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	transition: 0.3s;
+	font-size:14px;
+}
+
+input[type="submit"]:hover {
+	background-color:#004994;
+	transition: 0.3s;
+	color:#fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:focus {
+	border-color:#004994;
+	outline:none;
+	background-color:#004994;
+}
+
+#secondcontact {
+	display:block;
+}
+
+#secondcontact span.wpcf7-list-item {
+	width:100%;
+}
+
+#secondcontact span.wpcf7-list-item {
+	display:block !important;
+}
+/*input[value="Pack 1 — 199€ HT/mois"]:checked + #one {
+  font-weight: bold;
+  border-color: yellow;
+}*/
+
+input[type="radio"]:checked + span {
+	color:#004994;
+	font-size:;
+}
+input[type="radio"][value="Pack 1"]:checked + span {
+	color:#a9b21d;
+}
+input[type="radio"][value="Pack 2"]:checked + span {
+	color:#f2ab42;
+}
+input[type="radio"][value="Pack 3"]:checked + span {
+	color:#3fb6ab;
+}
+
+
+
+.checkbox-newsletter .wpcf7-list-item {margin-right:20px;}
+
+.facebook-page-1 .wpcf7-form-control {display:block;}
+.facebook-page-1 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-2 .wpcf7-form-control {display:block;}
+.facebook-page-2 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-3 .wpcf7-form-control {display:block;}
+.facebook-page-3 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-4 .wpcf7-form-control {display:block;}
+.facebook-page-4 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-5 .wpcf7-form-control {display:block;}
+.facebook-page-5 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-6 .wpcf7-form-control {display:block;}
+.facebook-page-6 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-7 .wpcf7-form-control {display:block;}
+.facebook-page-7 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-8 .wpcf7-form-control {display:block;}
+.facebook-page-8 span.wpcf7-list-item {margin-right:20px;}
+.facebook-page-9 .wpcf7-form-control {display:block;}
+.facebook-page-9 span.wpcf7-list-item {margin-right:20px;}
+
+div.wpcf7-validation-errors {
+    color: #EF687A !important;
+    border:1px solid #EF687A !important;
+    padding:10px 20px !important;
+    border-radius: 30px !important;
+}
+.screen-reader-response {
+	color: #000 !important;
+	text-decoration: underline;
+}
+.screen-reader-response ul {
+	display:none !important;
+}
+
+.wpcf7-spam-blocked {
+     color: #EF687A !important;
+}
+ 
+.wpcf7-mail-sent-ng {
+     color: #EF687A !important;
+}
+ 
+div.wpcf7-response-output {
+    border-color:#EF687A !important;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #EF687A !important;
+}
+
+span .wpcf7-not-valid {
+    border: 1px solid #EF687A !important;
+}
+
+div.wpcf7-mail-sent-ok {
+	color: #74D1B4 !important;
+	border:1px solid #74D1B4 !important;
+    padding:10px 20px !important;
+    border-radius: 30px !important;
+
+}
+.logo_biocoop {
+	width:250px;
+}
+
+.logo_artefact {
+	width:145px;
+}
+
+.nb_magasins {
+	display:flex; 
+	width:33%; 
+	align-items:center; 
+	justify-content:space-between;
+}
+
+.upload_engagement {
+	display:flex;
+	align-items:center;
+	color:#0553A0;
+	font-weight: 600;
+	text-decoration:none;
+}
+
+.menu-nb-magasins {
+	background-color:#fff;
+	border-radius:5px;
+	border:1px solid #DCDCDC;
+}
+
+/* Tableau magasins */
+.aide {
+            display:flex;
+            width:1130px;
+        }
+
+        .aide div {
+            width:30%;
+            margin-left:50px;
+            margin-top:30px;
+        }
+
+.img_bulle {
+            width:350px; 
+            position:absolute;
+        }
+        .aide h2{
+            font-size:1.2em;
+            position:absolute;
+            width:300px;
+            margin:160px 0 0 40px;
+            transform:rotate(-4deg);
+        }
+
+        td {
+            border: 1px solid #DCDCDC;
+            text-align:center;
+            width:100px;
+            height:30px;
+        }
+        table {
+          border-collapse: collapse;
+          font-size:12px;
+        }
+        th {
+          font-weight:400;
+          width:110px;
+          height:40px;
+        }
+        .th_site {
+          width:50px;
+        }
+
+        .deconseille {
+            background-color:#cacaca;
+        }
+
+        .optimal {
+            background-color:#B6EDD2;
+        }
+
+
+@media(min-width:1500px){
+body {
+	display:flex;
+	flex-direction: column;
+}
+.content {
+	width:1300px;
+	align-self:center;
+}
+}
+
+
+@media(max-width:1240px){
+
+	.img_bulle {
+	    width:20em;
+	        }
+
+}
+
+@media(max-width:1200px){
+	.img_bulle {
+	    width:15em;
+	        }
+	.aide h2 {
+	    margin:100px 0 0 30px;
+	    font-size:1em;
+	        }
+	        .aide {
+		width:1090px;
+	}
+}
+
+@media(max-width:1135px){
+
+	.img_bulle {
+	    width:12em;
+	        }
+	.aide h2 {
+	    margin:80px 0 0 20px;
+	    width:200px;
+	        }
+}
+
+@media(max-width:1085px){
+	.aide div {
+	    margin-left:10px;
+	        }
+	.img_bulle {
+	    width:11em;
+	        }
+	.aide h2 {
+	    margin:70px 0 0 20px;
+	    width:140px;
+	        }
+}
+
+
+@media(max-width:1023px){
+	.display_on_larger_screen {
+display:flex;
+justify-content: center;
+text-align: center
+}
+
+.display_on_larger_screen h2 {
+	width:65%;
+}
+.content {
+	display:none;
+}
+}
+
+@media screen and (min-width: 800px) {
+	.row_global {
+		display:flex;
+		flex-direction: row;
+    	flex-wrap: nowrap;
+	}
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top:10px;
+    justify-content: space-around;
+  }
+  .row_infosmagasins {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top:10px;
+  }
+  .column_global {
+  	border:1px solid #DCDCDC;
+  	border-radius:5px;
+  	padding:20px;
+  	margin-right:20px;
+  	margin-top:20px;
+  }
+  .long {
+    width:150px;
+  }
+  .x-long {
+    width:285px;
+  }
+
+  .xx-long {
+    width:350px;
+  }
+
+  .xxx-long {
+    width:595px;
+  }
+  .short {
+    width:100px;
+  }
+}
+
+
+
+@media(max-width:768px){
+	.header {
+		flex-direction:column;
+		height:auto !important;
+	}
+
+	h1 {
+		font-size:22px;
+	}
+
+	.logo_biocoop {
+		width:145px;
+	}
+
+	.logo_artefact {
+		width:100px;
+	}
+/*
+	.content {
+		padding: 0px 20px 20px 20px;
+	}
+
+	h2 {
+		font-size:20px;
+	}
+
+	.nb_magasins {
+		width:100%;
+		display:flex;
+		flex-direction: column;
+		align-items:flex-start;
+	}
+
+	input[type="text"], input[type="tel"], input[type="email"] {
+		width:90%;
+		margin-left:0;
+	}
+
+	.wpcf7-form-control {
+		flex-direction: column;
+		align-items:center;
+	}
+
+	.wpcf7-list-item {
+		margin:5px 0px;
+	}
+
+	#checkbox-newsletter {
+		display:flex;
+		align-items: flex-start;
+	}
+
+	.upload_engagement {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	input[type="file"] {
+		margin-left:0;
+		margin-top:10px;
+	}
+}
+
+*/
+
+
+
+

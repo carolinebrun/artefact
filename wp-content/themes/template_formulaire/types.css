@@ -1,0 +1,63 @@
+
+@font-face {
+    font-family: 'decalotyperegular';
+    src: url('decalotype-regular-webfont.woff2') format('woff2'),
+         url('decalotype-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'decalotypesemibold';
+    src: url('decalotype-semibold-webfont.woff2') format('woff2'),
+         url('decalotype-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'decalotypeblack_italic';
+    src: url('type/decalotype-blackitalic-webfont.woff2') format('woff2'),
+         url('type/decalotype-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'decalotypeextrabold_italic';
+    src: url('type/decalotype-extrabolditalic-webfont.woff2') format('woff2'),
+         url('type/decalotype-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'decalotypebold_italic';
+    src: url('type/decalotype-bolditalic-webfont.woff2') format('woff2'),
+         url('type/decalotype-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'decalotypeblack';
+    src: url('type/decalotype-black-webfont.woff2') format('woff2'),
+         url('type/decalotype-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'decalotypeextrabold';
+    src: url('type/decalotype-extrabold-webfont.woff2') format('woff2'),
+         url('type/decalotype-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'decalotypebold';
+    src: url('type/decalotype-bold-webfont.woff2') format('woff2'),
+         url('type/decalotype-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
